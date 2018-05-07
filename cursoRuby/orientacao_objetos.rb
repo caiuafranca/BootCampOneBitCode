@@ -1,3 +1,4 @@
+require 'start.rb'
 class Carro
     def nome 
         @nome = 'Fiat'
@@ -7,7 +8,6 @@ class Carro
     end
 end
 
-
 c = Carro.new()
 
-puts (c.nome + " " +c.modelo )
+puts (c.nome + " " +c.modelo )  

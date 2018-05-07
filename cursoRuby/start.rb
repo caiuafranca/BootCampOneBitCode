@@ -21,7 +21,7 @@ puts "O nome digitado é: #{nome}"
 # var // valiavel local
 # @var // variavel de instancia
 # $car // variavel global
-
+$carro_ferrari = 'Ferrari'
 nome_usuario = "Caiua Gomes de França"
 
 puts(nome)
