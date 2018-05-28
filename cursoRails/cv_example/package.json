@@ -1,0 +1,9 @@
+{
+  "name": "cv_example",
+  "private": true,
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "vue-resource": "^1.5.1",
+    "vue-turbolinks": "^2.0.3"
+  }
+}

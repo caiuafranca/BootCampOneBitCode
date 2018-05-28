@@ -1,0 +1,47 @@
+<%= content_tag :div, id: 'user-form', class: 'columns', data:
+{user: user.to_json(expect: [ :created_at, :updated_at])} do %>
+
+<div class='column'>
+  <div id="form" class="card">
+    <div class="card-content">
+      <h2 class="title"> Cadastro de Usuários</h2>
+
+      <label>Nome</label>
+      <input type='text' v-model="user.name" class="input">
+
+      <label>Email:</label>
+      <input type='text' v-model="user.email" class="input">
+
+      <label>Telefone</label>
+      <input type='text' v-model="user.phone" class="input">
+
+      <label>Descrição</label>
+      <input type='text' v-model="user.description" class="input">
+
+      <label>Primeira Experiencia</label>
+      <textarea type='textarea' v-model="user.exp1" class="input"></textarea>
+
+      <label>Segunda Experiencia</label>
+      <textarea type='textarea' v-model="user.exp2" class="input"></textarea>
+
+      <label>Terceira Experiencia</label>
+      <textarea type='textarea' v-model="user.exp3" class="input"></textarea>
+
+      <label>Formação</label>
+      <textarea type='textarea' v-model="user.education" class="input"></textarea>
+
+      <label>Extras</label>
+      <textarea type='textarea' v-model="user.extras" class="input"></textarea>
+
+      <label>Sexo</label>
+      <select v-model="user.gender" class="select">
+        <option>Masculino</option>
+        <option>Feminino</option>
+      </select>
+    </div>
+    <div class="card-footer">
+      <button @click="saveUser" class="button is-link"> Criar Curriculum </button >
+    </div>
+  </div>
+</div>
+<% end %>
